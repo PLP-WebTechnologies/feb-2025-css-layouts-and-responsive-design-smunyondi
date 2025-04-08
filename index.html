@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ASSIGNMENT ADVANCED</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CARS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#">REGISTER</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Car Website</h1>
+         <!-- Car Buttons inside Header -->
+        <div class="car-buttons">
+            <button>Lamborghini</button>
+            <button>G-Wagon</button>
+            <button>Maseratti</button>
+            <button>Tesla</button>
+            <button>BMW</button>
+        </div>
+
+    </header>
+
+    <!-- Background Image Section -->
+    <section class="bg-image-section">
+        Our Beautiful Cars
+    </section>
+
+    <section>
+        <section>
+            <div class="section-heading">
+                <h2>Registration Form</h2>
+            </div>
+        </section>        
+        <form action="/submit" method="POST">
+            <!-- Personal Info -->
+            <div class="form-group">
+                <h3>Personal Info</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="kenya">KENYA</option>
+                    <option value="uganda">UGANDA</option>
+                    <option value="tanzania">TANZANIA</option>
+                    <option value="rwanda">RWANDA</option>
+                    <option value="burundi">BURUNDI</option>
+                </select>
+            </div>
+    
+            <!-- Credentials -->
+            <div class="form-group">
+                <h3>Account Details</h3>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+    
+            <!-- Preferences -->
+            <div class="form-group">
+                <h3>Preferences</h3>
+                <label>Gender:</label>
+                <div class="inline-options">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+    
+                <label>Interests:</label>
+                <div class="inline-options">
+                    <input type="checkbox" id="sport" name="interest" value="sport"><label for="sport">Sport</label>
+                    <input type="checkbox" id="suv" name="interests" value="suv"><label for="suv">SUV</label>
+                    <input type="checkbox" id="sedan" name="interests" value="sedan"><label for="sedan">Sedan</label>
+                    <input type="checkbox" id="jeep" name="interests" value="jeep"><label for="jeep">Jeep</label>
+                    <input type="checkbox" id="coupe" name="interests" value="coupe"><label for="coupe">Coupe</label>
+                </div>
+            </div>
+    
+            <!-- Buttons -->
+            <div class="form-buttons">
+                <input type="reset" value="RESET">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </section>
+    
+    <!-- Table of Contacts -->
+    <section>
+        <section>
+            <div class="section-heading">
+                <h2>Contact List</h2>
+            </div>
+        </section>        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Simeon Munyondi</td>
+                    <td>144, Karatina</td>
+                    <td>0796443845</td>
+                    <td>simeonmunyondi608@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Rigathi Gachagua</td>
+                    <td>001, Karatina</td>
+                    <td>0798765432</td>
+                    <td>gachagua@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Eric Wamumbi</td>
+                    <td>105, Karaina</td>
+                    <td>0112345678</td>
+                    <td>ewamumbi@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Wahome</td>
+                    <td>1001, Nakuru</td>
+                    <td>0720242526</td>
+                    <td>alicew@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Chis Brown</td>
+                    <td>202 Birch Lane, NewYork</td>
+                    <td>555-8769</td>
+                    <td>chrisbrown@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+<footer>
+    <p>&copy; 2025 Car Sales Page. All rights reserved.</p>
+</footer>
+
+</html>
